@@ -7,6 +7,8 @@ bennett = User.create!(
     james = User.create!(
         name: "James")
 
+        
+
     chicken = Recipe.create!(
         name: "lemonade fried chicken",
         cooking_directions: "fry it up",
