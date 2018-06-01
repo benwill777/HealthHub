@@ -27,6 +27,6 @@ class Api::RecipesController < ApplicationController
     render json: @recipe
   end
   def recipe_params
-    params.require(:recipe).permit(:calories/serving, :fat, :carbs, :protein)
+    params.require(:recipe).permit(:name, :cooking_directions, :ingredients)
 end
 end

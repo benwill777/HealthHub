@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const NavBar = styled.div`
-background-color: #FF4747;
+background-color: palegreen;
 display: flex;
 justify-content: space-around; 
 flex-direction: column;

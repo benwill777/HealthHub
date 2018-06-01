@@ -23,8 +23,8 @@ class App extends Component {
 
 
             <Route exact path="/" component={HomePage} />
-            {/* <Route exact path="/cities/:id" component={SpecificCityPage} />
-            <Route exact path="/cities/:cityId/posts/:postId" component={SpecificPost} /> */}
+            {/* <Route exact path="/recipes/:id" component={SpecificCityPage} />
+            <Route exact path="/recipes/:cityId/posts/:postId" component={SpecificPost} /> */}
 
           </div>
 
