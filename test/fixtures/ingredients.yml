@@ -2,10 +2,8 @@
 
 one:
   name: MyString
-  cooking_directions: MyString
-  ingredients: MyString
+  amount: MyString
 
 two:
   name: MyString
-  cooking_directions: MyString
-  ingredients: MyString
+  amount: MyString

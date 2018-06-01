@@ -2,10 +2,6 @@
 
 one:
   name: MyString
-  cooking_directions: MyString
-  ingredients: MyString
 
 two:
   name: MyString
-  cooking_directions: MyString
-  ingredients: MyString
