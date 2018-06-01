@@ -5,7 +5,8 @@ import axios from 'axios'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
 import Navbar from './components/Navbar'
 import HomePage from './components/HomePage'
-
+import AnalizeRecipe from './components/AnalizeRecipe'
+import RecipeFacts from './components/RecipeFacts'
 
 
 class App extends Component {
@@ -23,8 +24,8 @@ class App extends Component {
 
 
             <Route exact path="/" component={HomePage} />
-            {/* <Route exact path="/recipes/:id" component={SpecificCityPage} />
-            <Route exact path="/recipes/:cityId/posts/:postId" component={SpecificPost} /> */}
+            <Route exact path="/recipes/" component={AnalizeRecipe} />
+            <Route exact path="/recipes/:id" component={AnalizeRecipe} />
 
           </div>
 

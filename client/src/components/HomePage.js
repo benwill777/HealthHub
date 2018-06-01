@@ -23,6 +23,18 @@ class HomePage extends Component {
         }
     };
     render() {
+        const userData = this.state.users.map(user => {
+
+            console.log("Rendering users", this.state.users.length)
+
+            return <div key={user.id}>
+
+                <Link to={`/recipes/${user.name}`}>{user.name}</Link>
+            </div>
+            if (this.state.err) {
+                return <div>{this.state.err}</div>
+            }
+        })
         return (
 
 
@@ -30,6 +42,7 @@ class HomePage extends Component {
             < div >
                 <h4>The Recipe Analizer</h4>
                 <button>Add New Recipe</button>
+                <h3>{userData} </h3>
             </div >
 
         );
