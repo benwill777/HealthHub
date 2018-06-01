@@ -7,7 +7,7 @@ bennett = User.create!(
     james = User.create!(
         name: "James")
 
-    chicken = REcipe.create!(
+    chicken = Recipe.create!(
         name: "lemonade fried chicken",
         cooking_directions: "fry it up",
         ingredients: "2 tablespoons grated lemon zest
@@ -24,7 +24,7 @@ bennett = User.create!(
 
         fried_cheese = Recipe.create!(
             name: "fried cheese sticks",
-            cooking_directions: "cook it"
+            cooking_directions: "cook it",
             ingredients: "8 dry manicotti shells
             1 cup ricotta
             1/4 cup grated Parmesan
@@ -36,8 +36,18 @@ bennett = User.create!(
             8 mozzarella cheese sticks
             3/4 cup all-purpose flour
             1 cup plain breadcrumbs
-            Canola oil, for frying"
+            Canola oil, for frying")
+
+            healthy_rice = Recipe.create!(
+                name: "Healthy Cauliflower Rice",
+                cooking_directions: "steam",
+                ingredients: "1 large head cauliflower, separated into 1-inch florets
+                3 tablespoons olive oil
+                1 medium onion, finely diced
+                Kosher salt
+                2 tablespoons fresh parsley leaves, finely chopped
+                Juice of 1/2 lemon")
                 
-        
+        p "db seeded"
                 
         
