@@ -1,19 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import axios from 'axios'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
+import Navbar from './components/Navbar'
+import HomePage from './components/HomePage'
+
+
 
 class App extends Component {
+
   render() {
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+
+      <Router>
+        <Switch>
+          <div>
+            <Navbar>
+              <h1>HealthHub</h1>
+            </Navbar>
+
+
+            <Route exact path="/" component={HomePage} />
+            {/* <Route exact path="/cities/:id" component={SpecificCityPage} />
+            <Route exact path="/cities/:cityId/posts/:postId" component={SpecificPost} /> */}
+
+          </div>
+
+        </Switch>
+      </Router>
     );
   }
 }
