@@ -34,6 +34,9 @@ Heroku
 I would like to have the input field for ingredients be able to take one string, and be able to return the nutrition facts, i would like to bring in OAuth, or revise.
 ```
 
+### Link to ERD
+[Link Here](https://imgur.com/a/TXKiYUO)
+
 
 ### Struggles
 ```
