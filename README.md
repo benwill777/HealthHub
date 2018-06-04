@@ -8,7 +8,7 @@ This application gives a user the ability to nutritionally analize a recipe to e
 CSS3 
 HTML5
 React
-Npm package manager
+Npm
 Ruby on rails
 Postgresql DB
 Postman
@@ -25,3 +25,17 @@ Heroku
 
 ### Link to my Wireframe
 [Link Here](https://imgur.com/a/XSFl1Q1)
+
+###  version 2
+```
+I would like to have the input field for ingredients be able to take one string, and be able to return the nutrition facts, i would like to bring in OAuth, or revise.
+```
+
+
+### Struggles
+```
+time management
+choosing the api i wanted to work with
+database setup
+state management
+```
