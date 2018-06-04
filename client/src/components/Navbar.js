@@ -13,14 +13,20 @@ margin-bottom: 8px;
 
 h2 {
    color: whitesmoke;
-   font-family:gay;
+   font-family: gay;
+   text-decoration: underline overline;
+  
 }
+p{
+       font-size: 20px;
+   }
 `
 class Navbar extends Component {
     render() {
         return (
             <NavBar> <div>
                 <h2>HealthHub</h2>
+                <p>Recipe Nutrition Analysis </p>
             </div></NavBar>
         );
     }

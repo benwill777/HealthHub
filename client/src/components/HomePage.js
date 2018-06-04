@@ -41,7 +41,7 @@ class HomePage extends Component {
 
             < div >
                 <h4>The Recipe Analizer</h4>
-                <button>Add New Recipe</button>
+                <Link to="/recipes"><button>Add New Recipe</button></Link>
                 <h3>{userData} </h3>
             </div >
 
