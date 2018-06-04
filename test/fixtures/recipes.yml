@@ -4,8 +4,10 @@ one:
   name: MyString
   cooking_directions: MyString
   ingredients: MyString
+  recipe_id: 1
 
 two:
   name: MyString
   cooking_directions: MyString
   ingredients: MyString
+  recipe_id: 1

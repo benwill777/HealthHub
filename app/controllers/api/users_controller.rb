@@ -1,7 +1,10 @@
 class Api::UsersController < ApplicationController
   def index
+    @users = User.all
+    render json: @users
   end
 
   def show
-  end
+    @users = User.find(params[:id])
+    render json: @users
 end

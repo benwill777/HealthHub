@@ -29,7 +29,6 @@ class AnalizeRecipe extends Component {
         const transferdata = {
             title: this.state.newRecipe.name,
             ingredients: this.state.newRecipe.ingredients,
-            user_id: this.props.userId
         }
 
         await axios.post('https://api.edamam.com/api/nutrition-details?app_id=81ab8bf4&app_key=abdf19b8e1b63674959facdb2cb894c1', transferdata)

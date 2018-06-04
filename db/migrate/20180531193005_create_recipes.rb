@@ -4,8 +4,8 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :cooking_directions
       t.string :ingredients
-      t.integer 
-      t.references :user, foreign_key: true
+      t.integer :recipe_api_id
+      t.references :users, foreign_key: true
       t.timestamps
     end
   end
