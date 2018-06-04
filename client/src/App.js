@@ -18,7 +18,7 @@ class App extends Component {
         <Switch>
           <div>
             <Navbar>
-              <h1>HealthHub</h1>
+              <h2>HealthHub</h2>
             </Navbar>
 
 
