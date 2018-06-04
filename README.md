@@ -26,6 +26,9 @@ Heroku
 ### Link to my Wireframe
 [Link Here](https://imgur.com/a/XSFl1Q1)
 
+### Link to my Trello Board
+[Link Here](https://trello.com/b/rmNwX8gZ/project-4)
+
 ###  version 2
 ```
 I would like to have the input field for ingredients be able to take one string, and be able to return the nutrition facts, i would like to bring in OAuth, or revise.
