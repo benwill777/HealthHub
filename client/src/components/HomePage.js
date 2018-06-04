@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styles from 'styled-components'
 import axios from 'axios'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import SingleUser from './SingleUser'
 class HomePage extends Component {
     state = {
         users: []
@@ -23,13 +24,15 @@ class HomePage extends Component {
         }
     };
     render() {
+        const userId = this.props.match.params.id
+        console.log(userId)
         const userData = this.state.users.map(user => {
 
             console.log(userData)
 
             return <div key={user.id}>
 
-                <Link to={`/recipes/${user.name}`}>{user.name}</Link>
+                <Link to={`/recipes/${user.id}`}>{user.name}</Link>
             </div>
             if (this.state.err) {
                 return <div>{this.state.err}</div>

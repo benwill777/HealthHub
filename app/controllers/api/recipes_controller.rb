@@ -1,7 +1,9 @@
 class Api::RecipesController < ApplicationController
   def index
-    @recipe = Recipe.find(params[:id])
-    render json: @recipe
+    @user = User.find(params[:id])
+    @recipes = @user.recipes.all
+    @response = {user: @user, recipes: @recipes}
+    render json: @response
   end
 
   def show

@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
 import Navbar from './components/Navbar'
 import HomePage from './components/HomePage'
 import AnalizeRecipe from './components/AnalizeRecipe'
-import RecipeFacts from './components/RecipeFacts'
+import SingleUser from './components/SingleUser'
 
 class App extends Component {
 
@@ -24,7 +24,7 @@ class App extends Component {
 
             <Route exact path="/" component={HomePage} />
             <Route exact path="/recipes/" component={AnalizeRecipe} />
-            <Route exact path="/recipes/:id" component={RecipeFacts} />
+            <Route exact path="/recipes/:id" component={SingleUser} />
 
           </div>
 

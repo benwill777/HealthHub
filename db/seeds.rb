@@ -1,5 +1,4 @@
-Recipe.destroy_all
-Ingredient.destroy_all
+User.destroy_all
 
 bennett = User.create!(
     name: "Bennett")
@@ -9,7 +8,7 @@ bennett = User.create!(
 
         
 
-    chicken = Recipe.create!(
+    bennett.recipes.create!(
         name: "lemonade fried chicken",
         cooking_directions: "fry it up",
         ingredients: "2 tablespoons grated lemon zest
@@ -24,7 +23,7 @@ bennett = User.create!(
         1/4 cup mayonnaise
         Olive-oil cooking spray")
 
-        fried_cheese = Recipe.create!(
+        bennett.recipes.create!(
             name: "fried cheese sticks",
             cooking_directions: "cook it",
             ingredients: "8 dry manicotti shells
@@ -40,7 +39,7 @@ bennett = User.create!(
             1 cup plain breadcrumbs
             Canola oil, for frying")
 
-            healthy_rice = Recipe.create!(
+            bennett.recipes.create!(
                 name: "Healthy Cauliflower Rice",
                 cooking_directions: "steam",
                 ingredients: "1 large head cauliflower, separated into 1-inch florets
