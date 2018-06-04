@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import styles from 'styled-components'
 import axios from 'axios'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import styles from 'styled-components'
+import styled from 'styled-components'
 
 
 const Align = styled.div`
 display: flex;
 align-content: center;
+flex-wrap: wrap;
 `
 class AnalizeRecipe extends Component {
     state = {
@@ -36,7 +37,7 @@ class AnalizeRecipe extends Component {
     }
     render() {
         return (
-            <div>
+            <Align><div>
                 <form onSubmit={this.handleSubmit}>
                     <div>
                         <label htmlFor="name"></label>
@@ -51,7 +52,7 @@ class AnalizeRecipe extends Component {
                     <Link to='/recipe/recipeId'><button>Analyze & Save Recipe</button></Link>
 
                 </form>
-            </div>
+            </div></Align>
         );
     }
 }
