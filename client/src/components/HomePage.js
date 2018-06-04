@@ -14,18 +14,18 @@ class HomePage extends Component {
             const response = await axios.get('/api/users');
             console.log(response.data);
             await this.setState({ users: response.data });
-            return response.data
+            //return response.data
         }
         catch (err) {
             console.log(err)
             await this.setState({ err: err.message })
-            return err.message
+            //return err.message
         }
     };
     render() {
         const userData = this.state.users.map(user => {
 
-            console.log("Rendering users", this.state.users.length)
+            console.log(userData)
 
             return <div key={user.id}>
 
@@ -40,9 +40,10 @@ class HomePage extends Component {
 
 
             < div >
+                <h3>{userData} </h3>
                 <h4>The Recipe Analizer</h4>
                 <Link to="/recipes"><button>Analize a Recipe</button></Link>
-                <h3>{userData} </h3>
+
             </div >
 
         );
