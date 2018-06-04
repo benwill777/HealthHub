@@ -8,7 +8,6 @@ import HomePage from './components/HomePage'
 import AnalizeRecipe from './components/AnalizeRecipe'
 import RecipeFacts from './components/RecipeFacts'
 
-
 class App extends Component {
 
   render() {

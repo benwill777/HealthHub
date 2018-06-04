@@ -40,7 +40,8 @@ class AnalizeRecipe extends Component {
                         <textarea onChange={this.handleChange} type="text" placeholder="ingredients..." name="ingredients" rows="12" size="45" />
                     </div>
 
-                    <button>Analyze</button>
+                    <Link to='/recipe/recipeId'><button>Analyze & Save Recipe</button></Link>
+
                 </form>
             </div>
         );

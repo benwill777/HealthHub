@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+
 
 const NavBar = styled.div`
 background-color: palegreen;
+opacity: 0.9;
 display: flex;
 justify-content: space-around; 
 flex-direction: column;
@@ -13,7 +16,7 @@ margin-bottom: 8px;
 
 h2 {
    color: whitesmoke;
-   font-family: gay;
+   font-family: fantasy;
    text-decoration: underline overline;
   
 }
@@ -25,7 +28,7 @@ class Navbar extends Component {
     render() {
         return (
             <NavBar> <div>
-                <h2>HealthHub</h2>
+                <Link to='/'> <h2>HealthHub</h2></Link>
                 <p>Recipe Nutrition Analysis </p>
             </div></NavBar>
         );
